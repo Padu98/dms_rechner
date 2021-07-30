@@ -29,6 +29,7 @@ class DatabaseHelper {
   static final _100l = '100l';
   static final _200l = '200l';
   static final _400l = '400l';
+  static final _columnImg = "userImg";
 
   static Database _database;
 
@@ -84,7 +85,8 @@ class DatabaseHelper {
     $_1500f INTEGER,
     $_100l INTEGER,
     $_200l INTEGER,
-    $_400l INTEGER   
+    $_400l INTEGER,
+    $_columnImg TEXT NOT NULL   
     ''');
   }
 

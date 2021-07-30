@@ -36,6 +36,7 @@ dev_dependencies:
   path_provider:
   dio: ^3.0.10
   get_it: ^5.0.6
+  rxdart: ^0.25.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
