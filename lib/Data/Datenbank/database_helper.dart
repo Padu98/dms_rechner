@@ -8,27 +8,27 @@ class DatabaseHelper {
   static final _dbName = 'myDatabase.db';
   static final _dbVersion = 1;
   static final _tableName = 'myTableOne';
-  static final _columnId = '_id';
+  static final _columnId = 'id';
   static final _columnName = 'name';
   static final _sex = 'sex';
-  static final _50s = '50s';
-  static final _100s = '100s';
-  static final _200s = '200s';
-  static final _50r = '50r';
-  static final _100r = '100r';
-  static final _200r = '200r';
-  static final _50b = '50b';
-  static final _100b = '100b';
-  static final _200b = '200b';
-  static final _50f = '50f';
-  static final _100f = '100f';
-  static final _200f = '200f';
-  static final _400f = '400f';
-  static final _800f = '800f';
-  static final _1500f = '1500f';
-  static final _100l = '100l';
-  static final _200l = '200l';
-  static final _400l = '400l';
+  static final _50s = '_50s';
+  static final _100s = '_100s';
+  static final _200s = '_200s';
+  static final _50r = '_50r';
+  static final _100r = '_100r';
+  static final _200r = '_200r';
+  static final _50b = '_50b';
+  static final _100b = '_100b';
+  static final _200b = '_200b';
+  static final _50f = '_50f';
+  static final _100f = '_100f';
+  static final _200f = '_200f';
+  static final _400f = '_400f';
+  static final _800f = '_800f';
+  static final _1500f = '_1500f';
+  static final _100l = '_100l';
+  static final _200l = '_200l';
+  static final _400l = '_400l';
   static final _columnImg = "userImg";
 
   static Database _database;
@@ -65,28 +65,28 @@ class DatabaseHelper {
   Future _onCreate(Database db, int version) {
     db.execute('''
     CREATE TABLE $_tableName(
-    $_columnId INTEGER PRIMARY KEY,
+    $_columnId TEXT NOT NULL PRIMARY KEY,
     $_columnName TEXT NOT NULL,
     $_sex TEXT NOT NULL,
-    $_50s INTEGER,
-    $_100s INTEGER,
-    $_200s INTEGER,
-    $_50r INTEGER,
-    $_100r INTEGER,
-    $_200r INTEGER,
-    $_50b INTEGER,
-    $_100b INTEGER,
-    $_200b INTEGER,
-    $_50f INTEGER,
-    $_100f INTEGER,
-    $_200f INTEGER,
-    $_400f INTEGER,
-    $_800f INTEGER,
-    $_1500f INTEGER,
-    $_100l INTEGER,
-    $_200l INTEGER,
-    $_400l INTEGER,
-    $_columnImg TEXT NOT NULL   
+    $_50s TEXT NOT NULL,
+    $_100s TEXT NOT NULL,
+    $_200s TEXT NOT NULL,
+    $_50r TEXT NOT NULL,
+    $_100r TEXT NOT NULL,
+    $_200r TEXT NOT NULL,
+    $_50b TEXT NOT NULL,
+    $_100b TEXT NOT NULL,
+    $_200b TEXT NOT NULL,
+    $_50f TEXT NOT NULL,
+    $_100f TEXT NOT NULL,
+    $_200f TEXT NOT NULL,
+    $_400f TEXT NOT NULL,
+    $_800f TEXT NOT NULL,
+    $_1500f TEXT NOT NULL,
+    $_100l TEXT NOT NULL,
+    $_200l TEXT NOT NULL,
+    $_400l TEXT NOT NULL,
+    $_columnImg TEXT NOT NULL)  
     ''');
   }
 

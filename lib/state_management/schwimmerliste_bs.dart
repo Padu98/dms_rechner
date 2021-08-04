@@ -6,11 +6,8 @@ class SchwimmerListeMarker {
   Stream get swimmerMarkerStream$ => _swimmerMarker.stream;
   bool get currentTheme => _swimmerMarker.value;
 
-  addSwimmer(var swimmer){
-    if(!globals.schwimmerListe.contains(swimmer))
-      globals.schwimmerListe.add(swimmer);
-
-    _swimmerMarker.add(globals.schwimmerListe);
+  addSwimmer(var swimmerList){
+    _swimmerMarker.add(swimmerList);
     //Zeilen um Schwimmer auch der Datenbank hinzuzufügen fehlen noch!
   }
 
